@@ -1,0 +1,94 @@
+/* styles.css or any other CSS file you choose to use */
+.table-container {
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: 20px auto; /* Center align the table horizontally */
+    overflow-x: auto; /* Allows horizontal scrolling if the table is too wide */
+}
+
+.table-title {
+    font-size: 24px; /* Font size for the title */
+    font-weight: bold; /* Bold text */
+    color: #333; /* Text color */
+    margin-bottom: 15px; /* Space between title and table */
+    text-align: center; /* Center align the title */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    border: 1px solid #ddd; /* Add a border around the table */
+}
+
+.table th, .table td {
+    padding: 12px;
+    border: 1px solid #ddd; /* Add borders around table cells */
+}
+
+.table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table td {
+    color: #555;
+}
+
+.actions {
+    text-align: center;
+}
+
+.btn-update, .btn-remove {
+    background-color: #007bff; /* Blue background for buttons */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    padding: 8px 12px; /* Add padding */
+    margin: 2px; /* Add margin between buttons */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.btn-remove {
+    background-color: #dc3545; /* Red background for remove button */
+}
+
+.btn-update:hover, .btn-remove:hover {
+    opacity: 0.8; /* Slightly transparent on hover */
+}
+
+.input-container {
+    display: flex;
+    justify-content: center; /* Center align the input and button */
+    margin-top: 20px; /* Space above the input area */
+}
+
+.task-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px; /* Space between input and button */
+    flex: 1; /* Allow input to grow */
+}
+
+.btn-add {
+    background-color: #28a745; /* Green background for add button */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.btn-add:hover {
+    opacity: 0.8; /* Slightly transparent on hover */
+}

@@ -1,1 +1,29 @@
-<p>tasks works!</p>
+<div class="table-container">
+    <h2 class="table-title">Tasks List</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>address</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of listTasks let i=index">
+                <td>{{p.id}}</td>
+                <td>{{p.name}}</td>
+                <td>{{p.address}}</td>
+                <td class="actions">
+                    <button class="btn-update">Update</button>
+                    <button class="btn-remove">Remove</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="input-container">
+        <input type="text" placeholder="Enter new task details" class="task-input">
+        <button class="btn-add">Add</button>
+    </div>
+</div>
