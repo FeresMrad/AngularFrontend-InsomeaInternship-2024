@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TaskService } from '../services/task.service'; // Adjust the path as necessary
+import { TaskService } from '../services/task.service'; 
 import { Task } from '../core/models/Task';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-tasks',
   standalone: true,
-  imports: [FormsModule, CommonModule], // Ensure HttpClientModule is included
+  imports: [FormsModule, CommonModule], 
   templateUrl: './tasks.component.html',
   styleUrls: ['./tasks.component.css']
 })
@@ -33,7 +33,7 @@ export class TasksComponent implements OnInit {
     if (this.newTaskContent.trim()) {
       this.taskService.addTask(this.newTaskContent).subscribe(task => {
         this.tasks.push(task);
-        this.newTaskContent = ''; // Clear input after adding
+        this.newTaskContent = ''; 
       });
     }
   }
@@ -55,7 +55,7 @@ export class TasksComponent implements OnInit {
         if (index !== -1) {
           this.tasks[index] = updatedTask;
         }
-        this.taskToUpdate = null; // Clear the task being updated
+        this.taskToUpdate = null; 
       });
     }
   }

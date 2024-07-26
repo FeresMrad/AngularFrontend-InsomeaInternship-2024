@@ -5,7 +5,7 @@
           <tr>
               <th>Id</th>
               <th>Content</th>
-              <th>Date Created</th> <!-- New column -->
+              <th>Date Created</th> 
               <th>Actions</th>
           </tr>
       </thead>
@@ -13,7 +13,7 @@
           <tr *ngFor="let task of tasks; let i = index">
               <td>{{ task.id }}</td>
               <td>{{ task.content }}</td>
-              <td>{{ task.date_created | date:'short' }}</td> <!-- Format date -->
+              <td>{{ task.date_created | date:'short' }}</td> 
               <td class="actions">
                   <button class="btn-update" (click)="startUpdate(task)">Update</button>
                   <button class="btn-remove" (click)="deleteTask(task.id)">Remove</button>
@@ -27,7 +27,7 @@
       <button class="btn-add" (click)="addTask()">Add</button>
   </div>
 
-  <!-- Update Task Form -->
+  
   <div *ngIf="taskToUpdate" class="update-container">
       <h3>Update Task</h3>
       <input type="text" [(ngModel)]="taskToUpdate.content" class="task-input">
