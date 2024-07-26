@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Task } from '../core/models/Task'; // Import the model
+import { Task } from '../core/models/Task'; 
 
 @Injectable({
   providedIn: 'root'
 })
 export class TaskService {
-  private apiUrl = 'http://127.0.0.1:5000/api/tasks'; // URL to Flask API
+  private apiUrl = 'http://127.0.0.1:5000/api/tasks'; 
 
   constructor(private http: HttpClient) { }
 
