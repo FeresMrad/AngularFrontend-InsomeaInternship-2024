@@ -1,5 +1,5 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { provideHttpClient } from '@angular/common/http'; // Import provideHttpClient
+import { provideHttpClient } from '@angular/common/http'; 
 import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
 
